@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-    def home
-    end
+  def home
+    @home = Rails.application.credentials.autheticate[:name]
   end
+end
